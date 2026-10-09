@@ -1,0 +1,61 @@
+/* Títulos e Estilização do Sobre */
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 4px;
+    margin-bottom: 0.5rem;
+}
+
+/* Divisórias estilo ASCII para combinar com o jogo */
+.ascii-divider {
+    color: #444444;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+.ascii-divider-small {
+    color: #444444;
+    font-size: 1rem;
+}
+
+/* Parágrafos de Texto */
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #cccccc;
+    margin-bottom: 1.5rem;
+}
+
+.about-text strong {
+    color: #ffffff;
+}
+
+/* Caixa de informações do lado direito (Info Box) */
+.info-box {
+    background-color: #141414;
+    border: 2px dashed #333333; /* Borda tracejada remete ao terminal clássico */
+    border-radius: 4px;
+}
+
+.info-box-title {
+    font-size: 1.2rem;
+    color: #ffffff;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.info-list li {
+    font-size: 1rem;
+    color: #b3b3b3;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #1f1f1f;
+}
+
+.info-list li:last-child {
+    border-bottom: none; /* Remove a linha do último item */
+}
+
+.info-list li strong {
+    color: #ffffff;
+}
