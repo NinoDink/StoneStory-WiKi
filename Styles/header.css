@@ -1,0 +1,18 @@
+.wiki-header {
+    background-color: #141414;
+    border-bottom: 2px solid #262626;
+}
+
+.wiki-nav .nav-link {
+    color: #a3a3a3;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.wiki-nav .nav-link:hover,
+.wiki-nav .nav-link.active {
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}

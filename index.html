@@ -1,36 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StoneWiKi - WiKi</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="">
+    <title>Stone Story RPG - Wiki</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/styles.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar bg-body-tertiary">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24">
-                </a>
-            </div>
-        </nav>
+    <header class="wiki-header py-3">
+        <div class="container"> 
+            <div class="row align-items-center justify-content-between position-relative">
+                <div class="col-auto">
+                    <a href="#" class="d-inline-block">
+                        <img src="./img/logo.png" alt="Stone Story Wiki Logo" class="img-fluid wiki-logo" width="200" height="">
+                    </a>
+                </div>
 
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-        </ul>
+                <nav class="position-absolute start-50 translate-middle-x w-auto">
+                    <ul class="nav wiki-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Itens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Locais</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Quests</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Stonescript</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
     </header>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
