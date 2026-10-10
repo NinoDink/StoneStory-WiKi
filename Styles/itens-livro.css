@@ -1,0 +1,61 @@
+.ascii-book-container {
+    position: relative;
+    width: 820px; 
+    transform: scale(2.2);
+    transform-origin: center top; 
+}
+
+.ascii-book-background {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #333333; 
+    margin: 0;
+    user-select: none;
+}
+
+.book-carousel-content {
+    position: absolute;
+    top: 22px;    
+    left: 45px;       
+    width: 730px;
+    height: 190px;
+    z-index: 5;
+}
+
+.book-carousel-content.carousel-fade .carousel-inner {
+    display: grid !important;
+}
+
+
+.book-carousel-content .carousel-item {
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out !important;
+}
+
+.ascii-page-btn {
+    position: absolute;
+    top: 42%;
+    background: none;
+    border: none;
+    color: #555555;    
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.4rem; 
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 0 10px;
+    z-index: 20; 
+}
+
+.ascii-page-btn:hover {
+    color: #ffffff; 
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+.btn-prev {
+    left: -25px;
+}
+
+.btn-next {
+    right: -25px;
+}

@@ -1,33 +1,26 @@
 html {
     scroll-behavior: smooth;
 }
-
-/* Configuração do Banner Ajustada */
 .wiki-banner {
-    height: 75vh; /* Aumentamos um pouquinho para dar mais espaço vertical à arte */
-    background-image: url('../img/banner.png'); /* Mantenha o nome do seu arquivo aqui */
+    height: 75vh;
+    background-image: url('../img/banner.png');
     
     background-size: contain; 
     background-position: center center;
     background-repeat: no-repeat;
     
-    /* Como a arte ASCII do jogo tem fundo preto, garantimos que o fundo do banner também seja */
     background-color: #000000; 
     border-bottom: 2px solid #262626;
 }
 
-/* Ajuste da Seta para tirar a cor azul do link */
 .scroll-down-arrow {
     cursor: pointer;
     transition: transform 0.2s ease;
     animation: bounce 2s infinite;
-    
-    /* Remove qualquer cor de link padrão e força a cor desejada */
     color: #ffffff !important; 
     text-decoration: none;
 }
 
-/* Garante que o ícone interno da seta também mude para branco */
 .scroll-down-arrow svg {
     fill: #ffffff !important;
 }
