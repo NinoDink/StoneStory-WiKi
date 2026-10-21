@@ -13,6 +13,6 @@
 
 .wiki-nav .nav-link:hover,
 .wiki-nav .nav-link.active {
-    color: #ffffff;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    color: #ffffff !important;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5) !important;
 }
