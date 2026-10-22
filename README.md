@@ -29,4 +29,4 @@ O projeto também serve como atividade prática para aplicação dos conheciment
 
 ## 📌 Status
 
-🚧 **Em desenvolvimento**
+✅ **Completo**
