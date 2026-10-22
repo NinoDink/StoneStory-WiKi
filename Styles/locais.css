@@ -1,0 +1,54 @@
+/* Card Temático Estilo Stone Story */
+.location-card {
+    background-color: #0d0d0d;
+    border: 2px solid #333;
+    border-radius: 6px;
+    padding: 15px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.location-card:hover {
+    transform: translateY(-5px);
+    border-color: #fff; /* Destaque ao passar o mouse */
+}
+
+.location-name {
+    font-family: monospace;
+    font-size: 1.25rem;
+    color: #fff;
+    margin: 0;
+}
+
+.location-img-wrapper {
+    margin: 15px 0;
+    border: 1px solid #222;
+    background-color: #000;
+    text-align: center;
+}
+
+.location-img-wrapper img {
+    max-height: 180px;
+    object-fit: contain;
+}
+
+.stars {
+    color: #ffcc00;
+}
+
+.ascii-hr {
+    border-top: 1px dashed #444;
+    margin: 10px 0;
+}
+
+/* Badges Elementais */
+.element-badge {
+    font-size: 0.75rem;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+
+.badge-ghost { background-color: #4a4e69; color: #fff; }
+.badge-fire { background-color: #9e2a2b; color: #fff; }
+.badge-poison { background-color: #38b000; color: #fff; }
