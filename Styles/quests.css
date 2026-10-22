@@ -1,0 +1,55 @@
+/* Card de Quest Retro/Terminal */
+.quest-card {
+    background-color: #0d0d0d;
+    border: 2px solid #333;
+    border-radius: 6px;
+    padding: 20px;
+    font-family: monospace;
+    transition: all 0.2s ease-in-out;
+}
+
+.quest-card:hover {
+    border-color: #666;
+    transform: translateX(5px);
+}
+
+/* Card Concluído */
+.quest-card.quest-completed {
+    border-color: #1b4332;
+    background-color: #05190e;
+    opacity: 0.85;
+}
+
+.quest-title {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.quest-desc {
+    color: #ccc;
+    font-size: 0.95rem;
+}
+
+/* Badges das Quests */
+.quest-badge {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.badge-story { background-color: #3a5a40; color: #fff; }
+.badge-challenge { background-color: #7209b7; color: #fff; }
+.badge-script { background-color: #0077b6; color: #fff; }
+
+/* Botões de Filtro */
+.quest-filters .btn {
+    font-family: monospace;
+    border-color: #444;
+}
+
+.quest-filters .btn.active, .quest-filters .btn:hover {
+    background-color: #fff;
+    color: #000;
+}
