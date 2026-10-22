@@ -1,0 +1,75 @@
+/* Altura e perspectiva do card */
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 380px; /* Ajuste a altura dos cards conforme preferir */
+    perspective: 1000px; /* Cria a sensação de 3D */
+}
+
+/* Container interno que faz a rotação */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+/* Ao passar o mouse, o card inteiro gira 180 graus */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Frente e Verso compartilhando as propriedades de layout */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Oculta o verso durante a rotação no Safari */
+    backface-visibility: hidden;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Estilo da Frente (Imagem + Título em cima) */
+.flip-card-front {
+    background-color: #111;
+    color: white;
+}
+
+/* A imagem preenche todo o espaço do card */
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Título posicionado em cima da imagem */
+.card-title-overlay {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: 0;
+    color: #fff;
+    font-family: monospace; /* Mantém o estilo retro/RPG */
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* Melhora a legibilidade sobre a imagem */
+    z-index: 2;
+}
+
+/* Estilo do Verso (Descrição) */
+.flip-card-back {
+    background-color: #1a1a1a;
+    color: white;
+    transform: rotateY(180deg); /* Deixa o verso pré-invertido */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 2px solid #333;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}

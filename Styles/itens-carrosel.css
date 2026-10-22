@@ -1,11 +1,9 @@
 .carousel-container {
-    max-width: 1200px;
+    max-width: 1300px;
     object-position: center;
 }
 
 .carousel-item img {
-    object-position: center;
     height: auto;
-    object-fit: cover; /* Faz a imagem cobrir todo o espaço sem distorcer */
     background-color: #000;
 }

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../Styles/styles.css">
     <link rel="stylesheet" href="../Styles/itens-carrosel.css">
     <link rel="stylesheet" href="../Styles/itens-sobre.css">
+    <link rel="stylesheet" href="../Styles/itens-cards.css">
 </head>
 <body>
     <header class="wiki-header py-3">
@@ -29,13 +30,13 @@
                             <a class="nav-link active" href="#">Itens</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/locais.html">Locais</a>
+                            <a class="nav-link" href="./locais.html">Locais</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/quests.html">Quests</a>
+                            <a class="nav-link" href="./quests.html">Quests</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/stonescript.html">Stonescript</a>
+                            <a class="nav-link" href="./tonescript.html">Stonescript</a>
                         </li>
                     </ul>
                 </nav>
@@ -43,7 +44,7 @@
         </div>
     </header>
 
-    <div class="carousel-container">
+    <div class="carousel-container mx-auto mb-5">
         <div id="StoneCarrossel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#StoneCarrossel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -65,9 +66,7 @@
         </div>
     </div>
 
-    <main class="container">
-        
-
+    <main class="info-box p-4">
         <div class="container">
             <div class="row mb-5">
                 <div class="col-12 text-center">
@@ -76,8 +75,8 @@
                 </div>
             </div>
 
-            <div class="align-items-justify">
-                <div class="col-md-7">
+            <div class="row justify-content-center row g-4 align-items-center">
+                <div class="col-md-7 text-justify">
                     <article class="about-text">
                         <p class="lead text-white-50">
                             Em <strong>Stone Story RPG</strong>, seu poder não vem de níveis, mas sim dos itens que você carrega. Dominar a bigorna e o caldeirão é a chave para a sobrevivência.
@@ -87,7 +86,92 @@
                         </p>
                     </article>
                 </div>
+
+                <div class="col-md-5">
+                    <div class="p-4">
+                        <h3 class="info-box-title text-center">FORJA</h3>
+                        <div class="ascii-divider-small text-center">---------------------</div>
+                        <img src="../img/forja.jpg" alt="Forja" class="img-fluid info-box-image mb-3">
+                    </div>
+                </div>
             </div>
+
+            <div class="ascii-divider">===========================================================================================</div>
+
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">GUIA DE COMBINAÇÕES</h2>
+                    <div class="ascii-divider">===================================</div>
+                </div>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+            <!-- Card 1 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <!-- Frente do Card -->
+                        <div class="flip-card-front">
+                            <img src="../img/evolucao.png" alt="Card 1" class="card-img">
+                            <h3 class="card-title-overlay">Evolução</h3>
+                        </div>
+                        <!-- Verso do Card -->
+                        <div class="flip-card-back">
+                            <p>Começando pela evolução, não importa que item você tenha, sempre há uma forma de aprimorá-lo. <br>
+                            Isso é demostrado pela estrala, toda vez que você junta duas armas com status de estrela iguais na forja, você poderá junta-las para assim fazer uma evolução maior</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="../img/modificacao.png" alt="Card 2" class="card-img">
+                            <h3 class="card-title-overlay">Modificação</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Falando agora sobre a modificação, existe uma grande quantidade de itens que podem ser criados, basta saber qual a junção certa. <br>
+                            Isso pode ser feito ao juntar dois itens diferentes na forja, como por exemplo a junção de um arco com um escudo, criasse um novo escudo específico para dash</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="../img/encantamento.png" alt="Card 3" class="card-img">
+                            <h3 class="card-title-overlay">Encantamentos</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Encantamentos são os efeitos de status da arma, toda arma pode ser encantada para aumentar seus atributos e habilidades. <br>
+                            É bem simples, existe do nível +1 até o +6, ele aplica um efeito  aleatório que condiz com a força do próprio encantamento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="../img/especiais.png" alt="Card 4" class="card-img">
+                            <h3 class="card-title-overlay">Especiais</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Agora tem as armas especiais por fim, normalmente encontradas matando bosses ou terminando quests da história principal. <br>
+                            Elas são armas que não podem ser modificadas, apenas encantadas e para evoluilas você precisará de uma outra arma de nível especial.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
     </main>
 
